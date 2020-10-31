@@ -4,6 +4,7 @@ import Tilt from 'react-tilt';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import * as AnnotationTile from './AnnotationTile';
 import * as AreaTile from './AreaTile';
 import * as AxisTile from './AxisTile';
 import * as BarGroupHorizontalTile from './BarGroupHorizontalTile';
@@ -52,6 +53,7 @@ import exampleToVisxDependencyLookup, {
 const tiltOptions = { max: 8, scale: 1 };
 
 const tiles = [
+  AnnotationTile,
   AreaTile,
   AxisTile,
   BarGroupTile,
