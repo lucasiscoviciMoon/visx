@@ -2,10 +2,10 @@ import React, { useMemo } from 'react';
 import useMeasure, { RectReadOnly, Options as BaseUseMeasureOptions } from 'react-use-measure';
 
 import Portal from '../Portal';
-import Tooltip, { TooltipProps } from '../tooltips/Tooltip';
+import Tooltip, { TooltipForwardedRef } from '../tooltips/Tooltip';
 import TooltipWithBounds from '../tooltips/TooltipWithBounds';
 
-export type TooltipInPortalProps = TooltipProps & Pick<UseTooltipPortalOptions, 'detectBounds'>;
+export type TooltipInPortalProps = TooltipForwardedRef & Pick<UseTooltipPortalOptions, 'detectBounds'>;
 
 export type UseTooltipInPortal = {
   containerRef: (element: HTMLElement | SVGElement | null) => void;
